@@ -50,3 +50,20 @@ export class NeuralChain {
   async run(): Promise<boolean> {
     try {
       console.log('[NeuralChain] Starting processing pipeline');
+      const data = await this.fetchData();
+      const result = this.core.process(data);
+      console.log('[NeuralChain] Score:', result.score.toFixed(4), '| Flagged:', result.flagged);
+      if (result.flagged) {
+        console.warn(\[NeuralChain] ACTION REQUIRED: score \ exceeds threshold \\);
+      }
+      return true;
+    } catch (err) {
+      console.error('[NeuralChain] Pipeline failed:', err);
+      return false;
+    }
+  }
+}
+
+if (require.main === module) {
+  new NeuralChain().run().then((ok) => process.exit(ok ? 0 : 1));
+}
