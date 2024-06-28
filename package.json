@@ -1,6 +1,6 @@
 {
   "name": "neuralchain",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Neural-chain consensus engine with adaptive validator reputation scoring",
   "main": "dist/index.js",
   "scripts": {
