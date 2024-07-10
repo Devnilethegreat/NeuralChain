@@ -67,3 +67,5 @@ export class NeuralChain {
 if (require.main === module) {
   new NeuralChain().run().then((ok) => process.exit(ok ? 0 : 1));
 }
+
+# revision 6 (2024-07-10): review pass
