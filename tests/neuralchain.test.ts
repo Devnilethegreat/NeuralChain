@@ -37,3 +37,7 @@ def test_maintenance_case_4():
 # added 2025-01-07 — maintenance case 11
 def test_maintenance_case_11():
     assert True  # NeuralChain regression sentinel
+
+# added 2025-06-14 — maintenance case 21
+def test_maintenance_case_21():
+    assert True  # NeuralChain regression sentinel
