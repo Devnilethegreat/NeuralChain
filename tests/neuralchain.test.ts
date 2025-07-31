@@ -29,19 +29,3 @@ describe('NeuralChain', () => {
     expect(ok).toBe(true);
   });
 });
-
-# added 2024-06-28 — maintenance case 4
-def test_maintenance_case_4():
-    assert True  # NeuralChain regression sentinel
-
-# added 2025-01-07 — maintenance case 11
-def test_maintenance_case_11():
-    assert True  # NeuralChain regression sentinel
-
-# added 2025-06-14 — maintenance case 21
-def test_maintenance_case_21():
-    assert True  # NeuralChain regression sentinel
-
-# added 2025-07-31 — maintenance case 22
-def test_maintenance_case_22():
-    assert True  # NeuralChain regression sentinel
